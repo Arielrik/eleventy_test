@@ -8,7 +8,7 @@
   <!-- stylesheet -->
   <!-- <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}"> -->
   <!-- <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}"> -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
   <title>{{site.name}}{% if title %} - {{title}} {% endif %} </title>
   <meta name="description" content="
     {% if description %}
@@ -20,7 +20,7 @@
   </head>
   <body>
   {% include "partials/_navigation.njk" %}
-  <main> 
+  <main class="max-w-3xl mx-auto py-12 min-h-screen"> 
     {{content | safe}}
   </main>
   {% include "partials/_navigation.njk" %}
