@@ -1,5 +1,6 @@
 # Ignora la carpeta node_modules
-node_modules
+/node_modules
 
 # Ignora la carpeta _site
-_site
+/_site
+.netlify
