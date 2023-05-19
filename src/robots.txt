@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow /
+
+# Host
+Host: https://ariel11ty.netlify.app
+
+# Sitemaps
+Sitemap: https://ariel11ty.netlify.app/sitemap.xml

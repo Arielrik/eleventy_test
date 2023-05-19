@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Blog
+description: This is the blog home
 tags: page
 order: 3
 ---
@@ -11,8 +12,9 @@ order: 3
 
 <ul>
     {% for post in collections.post %}
-        <li>
-            <a href="{{ post.url }}" class="hover:text-sky-400">{{ post.data.title }}</a>
+        <li class="blog-list-item">
+            <a href="{{ post.url }}" class="blog-list-link">{{ post.data.title }}</a>
+            <small class="blog-list-date">{{ post.date | postDate }}</small>
         </li>
     {% endfor %}
 </ul>
